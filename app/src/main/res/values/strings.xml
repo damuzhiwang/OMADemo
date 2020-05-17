@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OMA_demo</string>
+    <string name="balance">余额</string>
+    <string name="money_hint">￥</string>
+    <string name="card_number">卡号:</string>
+    <string name="trade_record">交易记录</string>
+    <string name="recharge">充值</string>
+    <string name="consume">消费</string>
+    <string name="near_trade_record">最近10笔交易记录</string>
+    <string name="loading_card_info" translatable="false">正在读卡...</string>
+    <string name="get_data" translatable="false">正在数据...</string>
+</resources>

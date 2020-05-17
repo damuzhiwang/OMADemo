@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back_arrow"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp24"
+            android:textColor="@color/text_333"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@color/line"
+        />
+    
+    <ImageView
+        android:id="@+id/iv_head_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/dp80"
+        android:maxHeight="@dimen/dp120"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp30"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp15"
+        android:textSize="@dimen/sp28"
+        android:textColor="@color/text_333"
+        android:textStyle="bold"
+        android:text="王五"
+        />
+
+    <TextView
+        android:id="@+id/tv_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp15"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/text_999"
+        android:text="华中科技大学"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp12"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_professional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/text_999"
+            android:text="计算机"
+            />
+
+        <TextView
+            android:id="@+id/tv_gradle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/text_999"
+            android:text="大二（5）班"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/card_bg"
+        >
+        <TextView
+            android:id="@+id/tv_balance_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/white"
+            android:text="@string/balance"
+            />
+
+        <TextView
+            android:id="@+id/tv_money_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_balance_hint"
+            android:layout_alignLeft="@+id/tv_balance_hint"
+            android:text="@string/money_hint"
+            android:textSize="@dimen/sp24"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_balance_hint"
+            android:layout_toRightOf="@+id/tv_money_hint"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="100.00"
+            android:textSize="@dimen/sp24"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_balance_hint"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="充值"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/card_bg"
+            android:background="@drawable/btn_recharge_bg"
+            />
+
+        <TextView
+            android:id="@+id/tv_card_num_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/white"
+            android:text="@string/card_number"
+            />
+
+        <TextView
+            android:id="@+id/tv_card_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_card_num_hint"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/white"
+            android:text="15584211111"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_trade_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp15"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/card_bg"
+        android:text="@string/trade_record"
+        />
+
+</LinearLayout>

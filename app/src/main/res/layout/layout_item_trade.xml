@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dp16">
+
+    <ImageView
+        android:id="@+id/item_trade_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/charge_record" />
+
+    <TextView
+        android:id="@+id/item_trade_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_toRightOf="@+id/item_trade_icon"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/text_333"
+        android:text="@string/recharge" />
+
+    <TextView
+        android:id="@+id/item_trade_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_trade_type_tv"
+        android:layout_toRightOf="@+id/item_trade_icon"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp18"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/gray_97"
+        android:text="2014-01-01 09:00" />
+
+    <TextView
+        android:id="@+id/item_trade_moeny_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/green_009944"
+        android:text="+100.00" />
+
+</RelativeLayout>

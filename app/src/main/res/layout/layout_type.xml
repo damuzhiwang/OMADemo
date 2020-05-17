@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/type_parent_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/leftTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp24"
+            android:textColor="@color/text_333"
+            android:text="@string/recharge"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/left_line"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp4"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp6"
+            android:background="@drawable/trade_line_shape"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp24"
+            android:textColor="@color/text_333"
+            android:text="@string/consume"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/right_line"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp4"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp6"
+            android:background="@drawable/trade_line_shape"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>
