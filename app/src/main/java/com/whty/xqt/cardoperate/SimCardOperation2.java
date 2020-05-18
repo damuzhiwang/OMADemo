@@ -34,7 +34,7 @@ public class SimCardOperation2 extends SimCardOperation{
 	 * 方法功能：单例模式获取SimOperation对象<br>
 	 * 参数说明：<br>
 	 * 作 者：杨明<br>
-	 * 开发日期：2013-9-9 下午7:24:29<br>
+	 * 开发日期：2019-9-9 下午7:24:29<br>
 	 * 修改日期：<br>
 	 * 修改人：<br>
 	 * 修改说明：<br>
@@ -54,8 +54,8 @@ public class SimCardOperation2 extends SimCardOperation{
 	 * 工程名称: MIDAm二期 <br>
 	 * 模块功能：SEService的回调函数，在回调当中初始化SEService和Session<br>
 	 * 作 者: 杨明<br>
-	 * 单 位：武汉天喻信息 研发中心 <br>
-	 * 开发日期：2013-9-9 下午7:24:17 <br>
+	 * 单 位： 研发中心 <br>
+	 * 开发日期：2019-9-9 下午7:24:17 <br>
 	 * *************************************************************************
 	 * ****<br>
 	 */
@@ -207,12 +207,7 @@ public class SimCardOperation2 extends SimCardOperation{
 	@RequiresApi(api = Build.VERSION_CODES.P)
 	public void openConnection() {
 			SEServiceCallback seServiceConnection = new SEServiceCallback();
-			Executor executor = new Executor() {
-				@Override
-				public void execute(Runnable command) {
-
-				}
-			};
+			ExecutorService executor = Executors.newSingleThreadExecutor();
 			seService = new SEService(context, executor,seServiceConnection);
 		LogUtils.d("www", "openConnection: 9999");
 	}
@@ -273,7 +268,7 @@ public class SimCardOperation2 extends SimCardOperation{
 	 * 方法功能：判断逻辑通道能不能打开，如果能打开，则表明卡上存在该应用，不能则表明不存在该应用<br>
 	 * 参数说明：<br>
 	 * 作 者：杨明<br>
-	 * 开发日期：2013-9-12 下午5:04:10<br>
+	 * 开发日期：2019-9-12 下午5:04:10<br>
 	 * 修改日期：<br>
 	 * 修改人：<br>
 	 * 修改说明：<br>
